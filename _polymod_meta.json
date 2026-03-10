@@ -1,0 +1,38 @@
+{
+  "title": "meme lawlessness",
+  "description": "A mod for adding meme songs to the chart, but not a simple one",
+  "contributors": [
+    {
+      "name": "Fnf_Custom",
+      "role": "I made a mod and that's it",
+      "url": "https://www.youtube.com/@Fnf_Custom"
+    },
+    {
+      "name": "TyfoolFucks",
+      "role": "mod",
+      "url": "https://youtube.com/@dzakki2011?si=Vq0N_WL_c5hiKP1F"
+    },
+    {
+      "name": "My friend",
+      "role": "beta tester of the mod",
+      "url": ""
+    },
+    {
+      "name": "?",
+      "role": "?",
+      "url": ""
+    },
+    {
+      "name": "?",
+      "role": "?",
+      "url": ""
+    },
+    {
+      "name": "?",
+      "role": "?"
+    }
+  ],
+  "api_version": "0.8.0",
+  "mod_version": "0.7.1",
+  "license": "Apache-2.0"
+}
