@@ -1,0 +1,50 @@
+{
+ "version": "2.2.4",
+ "songName": "RatoMilton",
+ "artist": "Jym",
+ "charter": "mlob",
+ "offsets": { },
+ "playData": {
+  "songVariations": [
+   "fred",
+   "pico"
+  ],
+  "difficulties": [
+   "easy",
+   "normal",
+   "hard"
+  ],
+  "characters": {
+   "player": "bf",
+   "girlfriend": "gf",
+   "opponent": "milton",
+   "altInstrumentals": [
+    "pico", "fred"
+   ],
+   "opponentVocals": [
+    "milton"
+   ],
+   "playerVocals": [
+    "bf"
+   ]
+  },
+  "stage": "miltonBg",
+  "noteStyle": "funkin",
+  "ratings": {
+   "easy": 2,
+   "normal": 3,
+   "hard": 5
+  },
+  "album": "fun",
+  "previewEnd": 0
+ },
+ "generatedBy": "Friday Night Funkin' - v0.8.3",
+ "timeChanges": [
+  {
+   "t": 0,
+   "b": 0,
+   "bpm": 130,
+   "bt": [4, 4, 4, 4]
+  }
+ ]
+}
