@@ -1,0 +1,239 @@
+import funkin.modding.module.Module;
+import funkin.ui.credits.CreditsState;
+import funkin.ui.credits.CreditsDataHandler;
+
+class GooeyCredits extends Module {
+	public function new() {
+		super('MemeCredits', 1, {
+			state: CreditsState
+		});
+
+		CreditsDataHandler.CREDITS_DATA.entries.unshift( // for example this one is on the bottom
+			{
+				header: "",
+				body: [
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					},
+					{
+						line: "",
+					}
+				]
+			});
+		CreditsDataHandler.CREDITS_DATA.entries.unshift({
+			header: "",
+			body: [
+				{
+					line: "",
+				},
+				{
+					line: "",
+				},
+				{
+					line: "",
+				}
+			]
+		});
+		CreditsDataHandler.CREDITS_DATA.entries.unshift({
+			header: "",
+			body: [
+				{
+					line: "",
+				},
+				{
+					line: "",
+				},
+				{
+					line: "",
+				},
+			]
+		});
+		CreditsDataHandler.CREDITS_DATA.entries.unshift({
+			header: "",
+			body: [
+				{
+					line: ""
+				}
+			]
+		});
+
+		CreditsDataHandler.CREDITS_DATA.entries.unshift({
+			header: "",
+			body: [
+				{
+					line: "",
+				}
+			]
+		});
+		CreditsDataHandler.CREDITS_DATA.entries.unshift({
+			header: "Programming",
+			body: [
+				{
+					line: "DeepSeek",
+				},
+				{
+					line: "",
+				},
+				{
+					line: "LeGooey",
+				}
+			]
+		});
+		CreditsDataHandler.CREDITS_DATA.entries.unshift({
+			header: "",
+			body: [
+				{
+					line: "",
+				},
+				{
+					line: "",
+				}
+			]
+		});
+		CreditsDataHandler.CREDITS_DATA.entries.unshift({
+			header: "",
+			body: [
+				{
+					line: "",
+				},
+				{
+					line: "",
+				},
+				{
+					line: "",
+				},
+				{
+					line: "",
+				},
+				{
+					line: "",
+				},
+				{
+					line: "",
+				}
+			]
+		});
+		CreditsDataHandler.CREDITS_DATA.entries.unshift({
+			header: "",
+			body: [
+				{
+					line: "",
+				}
+			]
+		});
+		CreditsDataHandler.CREDITS_DATA.entries.unshift({
+			header: "Charter",
+			body: [
+				{
+					line: "Kuba_plays",
+				},
+				{
+					line: "mlob1452",
+				},
+				{
+					line: "Xarion",
+				},
+				{
+					line: "",
+				}
+			]
+		});
+		CreditsDataHandler.CREDITS_DATA.entries.unshift({
+			header: "Musicians",
+			body: [
+				{
+					line: "Jym",
+				},
+				{
+					line: "MarkedAman",
+				},
+				{
+					line: "ram",
+				},
+				{
+					line: "",
+				},
+				{
+					line: "",
+				},
+				{
+					line: "",
+				},
+				{
+					line: "",
+				}
+			]
+		});
+		CreditsDataHandler.CREDITS_DATA.entries.unshift({
+			header: "Director",
+			body: [
+				{
+					line: "mlob1452",
+				}
+			]
+		});
+		CreditsDataHandler.CREDITS_DATA.entries.unshift( // and this is on da top
+			{
+				header: "Friday Night Funkin': MEME",
+				body: [
+					{
+						line: ""
+					}
+				]
+			});
+	}
+}
