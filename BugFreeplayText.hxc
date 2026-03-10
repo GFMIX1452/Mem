@@ -1,0 +1,51 @@
+import flixel.FlxG;
+import funkin.modding.module.Module;
+import funkin.util.ReflectUtil;
+
+// shoutouts qt rewired
+
+class BugFreeplayText extends Module
+{
+    public function new()
+	{
+		super('BugFreeplayText', 1000000);
+	}
+
+    override function onUpdate(event)
+	{
+		super.onUpdate(event);
+
+		if (FlxG.state.subState == null || ReflectUtil.getClassNameOf(FlxG.state.subState) != "funkin.ui.freeplay.FreeplayState") return;
+
+        var defaultText = "OFFICIAL OST";
+        var capsule = FlxG.state.subState.grpCapsules.members[FlxG.state.subState.curSelected];
+        var data = capsule.freeplayData;
+		var id = (data != null) ? data.levelId : null;
+
+        if (id != null && FlxG.state.subState.ostName != null)
+        {
+            // Маппинг ID уровней к их специальным текстам
+            var specialTexts:Map<String, String> = [
+                "mem1" => "MEM OST",    // Замените на нужный текст
+                "mem2" => "MEM OST",    // Замените на нужный текст
+                "mem3" => "MEM OST",    // Замените на нужный текст
+                "week67" => "67 OST"  // Замените на нужный текст
+            ];
+
+            // Проверяем, есть ли специальный текст для этого ID
+            if (specialTexts.exists(id))
+            {
+                FlxG.state.subState.ostName.text = specialTexts.get(id);
+            }
+            else
+            {
+                // Для всех остальных уровней используем стандартный текст
+                FlxG.state.subState.ostName.text = defaultText;
+            }
+        }
+        else
+        {
+            FlxG.state.subState.ostName.text = defaultText;
+        }
+    }
+}
